@@ -1,18 +1,24 @@
 package testassignment;
 
+import java.util.Scanner;
+
 public class Discountassign {
 
 	public static void main(String[] args) {
 		double costPrice=300;
 		double finalPrice;
-		String PromoCode = "promo20";
-		
+		String PromoCode = " ";
+			
 		System.out.println("The initial cost price of the product is =" + costPrice);
 		double stdDiscount= ((costPrice*50)/100);
 		System.out.println("standard discount price =" + stdDiscount);
 		double sellingPrice=costPrice-stdDiscount;
 		System.out.println("Selling price after standard discount = " + sellingPrice);
-				
+	
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the PromoCode  :");
+	    PromoCode = sc.next();
+	    
 		if (PromoCode.equals("promo5"))
 		{
 			double promoDiscount=(sellingPrice*5)/100;
@@ -35,6 +41,9 @@ public class Discountassign {
 			finalPrice=(sellingPrice-promoDiscount);
 			
 			System.out.println("Final Price after all discount is = " + finalPrice);
+					
 		}
+		sc.close();
 	}
+	
 }

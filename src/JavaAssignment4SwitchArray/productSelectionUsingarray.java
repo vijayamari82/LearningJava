@@ -6,7 +6,7 @@ public class productSelectionUsingarray {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		  String[] Apple = {"ihone12","iphone12 mini","iphone 11","iphone 11"};
+		  String[] apple = {"ihone12","iphone12 mini","iphone 11","iphone 11"};
 		  String[] samsung = {"s20","s21","flip3","fold3"};
 		  String[] google = {"Google Pixel 6","Google Pixel 6 pro","Google Pixel pro", "Google Pixel 5"};
 		    
@@ -17,8 +17,8 @@ public class productSelectionUsingarray {
 		    switch (operation) {
 
 		      case "apple":
-		    	  System.out.println(Arrays.toString(Apple));
-		    	  selectedProduct = Apple;
+		    	  System.out.println(Arrays.toString(apple));
+		    	  selectedProduct = apple;
 		        break;
 
 		      case "samsung":

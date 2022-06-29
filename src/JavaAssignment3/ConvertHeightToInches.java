@@ -14,7 +14,7 @@ public class ConvertHeightToInches {
 		        System.out.println("The height in centimeters: " + (30.48 * feet + 2.54 * inches));
 		        
 		        in.close();
-				  
+				   
 		    }
 	
 }

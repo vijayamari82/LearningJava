@@ -1,13 +1,13 @@
-package javaAssignment4ClassMethod;
+package HomeWork;
 
 class AmusementParkClass //sub-class
 {
-    int height1, weight1;
-	void check1()
+    int height, weight;
+	void check()
 	{
-		if (height1 > 90 && height1 < 200)
+		if (height > 90 && height < 200)
 		{
-			if(weight1 > 15 && weight1 < 95)
+			if(weight > 15 && weight < 95)
 			{
 				System.out.println("You are allowed to Ride");
 			}

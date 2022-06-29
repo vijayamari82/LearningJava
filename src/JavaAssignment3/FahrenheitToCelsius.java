@@ -10,27 +10,27 @@ public class FahrenheitToCelsius {
 	
 public static void main(String[] args) {
        double faren,celsius;
-	   System.out.println("Choose type of conversion \n 1.Fahrenheit to Celsius  \n 2.Celsius to Fahrenheit");
+	   System.out.println("Choose the option to covert into : \n 1.Fahrenheit to Celsius  \n 2.Celsius to Fahrenheit\n");
 	   Scanner sc = new Scanner (System.in);
-	   int ch=sc.nextInt();
+	   int op=sc.nextInt();
 	        
-		if (ch==1)
+		if (op==1)
 		   {
+			      System.out.println("You have choosed Fahrenheit to Celsius !");
 			      System.out.println("Enter  Fahrenheit temperature");
 	              faren=sc.nextDouble();
 		    	  celsius=(faren-32)*5/9;
-		    	  System.out.println("Celsius temperature is = "+celsius);
-			  //    break;
-		   } else if(ch==2) {
-				  
+		    	  System.out.println("Celsius temperature is = " + celsius);
+			      
+		   } else if(op==2) {
+				  System.out.println("You have choosed Celsius to Fahrenheit !");
 		          System.out.println("Enter  Celsius temperature");
 	              celsius=sc.nextDouble();
 		    	  faren=((9*celsius)/5)+32;
-		    	  System.out.println("Fahrenheit temperature is = "+faren);
-			//  break;
-		     System.out.println("please choose valid choice");
-		   }  
-		
-		sc.close();
+		    	  System.out.println("Fahrenheit temperature is = "+ faren);
+			     
+		   }  else System.out.println("please choose valid choice");
+			 
+       		sc.close();
 		} 
 }
